@@ -1,38 +1,44 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+:root {
+  --white: #FFF;
+  --lightBrown: #BF7E68;
+  --medBrown: #914D41;
+  --lightGreen: #DFEFE2;
+  --medGreen: #91C190;
+
+}
+
+* {
+  margin: 0;
+  font-family: 'Titan One', cursive;
+  font-weight: lighter;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--medBrown);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  color: var(--lightGreen);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: var(--white);
+  font-size: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header img {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  width: 7em;
+}
+
+nav img {
+  color: var(--white);
 }
