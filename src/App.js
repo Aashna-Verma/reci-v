@@ -20,18 +20,22 @@ function App() {
         </div>
       </header>
 
-      <nav>
-        <div className='main3'>
-          <img src={search} className="Search-logo" alt="Search logo" />
-          <img src={saved} className="Saved-logo" alt="Saved-logo" />
-          <img src={list} className="List-logo" alt="List-logo" />
-        </div>
-        <div className='personal'>
-          <img src={account} className="Account-logo" alt="Account-logo" />
-          <img src={settings} className="Settings-logo" alt="Settings-logo" />
-        </div>
-      </nav>
+      <div>
+        <nav>
+          <ul>
+            <li><a><img src={search} className="Search-logo" alt="Search logo" stroke="#FFF" /></a></li>
+            <li><a><img src={saved} className="Saved-logo" alt="Saved-logo" /></a></li>
+            <li><a><img src={list} className="List-logo" alt="List-logo" /></a></li>
+            <li><a></a></li>
+            <li><a><img src={account} className="Account-logo" alt="Account-logo" /></a></li>
+            <li><a><img src={settings} className="Settings-logo" alt="Settings-logo" /></a></li>
+          </ul>
+        </nav>
 
+        <div className='content'>
+
+        </div>
+      </div>
       {/* Recipe */}
       {/* Recipe */}
     </div>
