@@ -18,6 +18,7 @@
 
 body {
   background-color: var(--medBrown);
+  height: 100vh;
 }
 
 header {
@@ -39,21 +40,27 @@ header img {
   width: 7em;
 }
 
-ul {
+form {
   all: unset;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 175px);
+  display: grid;
+  grid-template: repeat(6, 1fr) / 1fr ;
+  width: 90px;
+  position: absolute;
+  bottom: 0px;
 }
 
-nav {
-  margin-top: 125px;
+input {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  opacity: 0%;
 }
 
-nav img {
-  margin: 65px 15px;
-  padding: 3px;
-  display: block;
-}
-
-nav img:hover {
+input[type=radio]:focus + img{
   filter: invert(0.4) sepia(1.9) saturate(1.1) hue-rotate(85deg);
 }
 

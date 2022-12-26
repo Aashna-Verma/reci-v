@@ -21,16 +21,29 @@ function App() {
       </header>
 
       <div>
-        <nav>
-          <ul>
-            <li><a><img src={search} className="Search-logo" alt="Search logo" stroke="#FFF" /></a></li>
-            <li><a><img src={saved} className="Saved-logo" alt="Saved-logo" /></a></li>
-            <li><a><img src={list} className="List-logo" alt="List-logo" /></a></li>
-            <li><a></a></li>
-            <li><a><img src={account} className="Account-logo" alt="Account-logo" /></a></li>
-            <li><a><img src={settings} className="Settings-logo" alt="Settings-logo" /></a></li>
-          </ul>
-        </nav>
+        <form action=''>
+          <div>
+            <input type="radio" id="search" name="nav" value="search"/>
+            <img src={search} className="search-logo" alt="search logo" />
+            </div>
+          <div>
+            <input type="radio" id="saved" name="nav" value="saved" />
+            <img src={saved} className="saved-logo" alt="saved logo"/>
+            </div>
+          <div>
+            <input type="radio" id="list" name="nav" value="list" />
+            <img src={list} className="list-logo" alt="list logo"/>
+            </div>
+          <div></div>
+          <div>
+            <input type="radio" id="account" name="nav" value="account" />
+            <img src={account} className="account-logo" alt="account logo"/>
+            </div>
+          <div>
+            <input type="radio" id="settings" name="nav" value="settings" />
+            <img src={settings} className="settings-logo" alt="settings logo"/>
+            </div>
+          </form>
 
         <div className='content'>
 
