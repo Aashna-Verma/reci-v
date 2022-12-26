@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/reci-v/static/css/main.7d31e519.css",
+    "main.js": "/reci-v/static/js/main.44fb889f.js",
+    "static/js/787.89bc7d53.chunk.js": "/reci-v/static/js/787.89bc7d53.chunk.js",
+    "static/media/Bread-sparkle-bigcircle.svg": "/reci-v/static/media/Bread-sparkle-bigcircle.b3a27ec7cd4a1550651c794f85c76a1c.svg",
+    "static/media/saved.svg": "/reci-v/static/media/saved.365abe3a59b7dfaa51796c23896e84fa.svg",
+    "static/media/settings.svg": "/reci-v/static/media/settings.ff5ec40aaa072158c14100e16723ff7c.svg",
+    "static/media/account.svg": "/reci-v/static/media/account.fead4ceca706c60cd55f780d23eeb48d.svg",
+    "static/media/search.svg": "/reci-v/static/media/search.45ef0b3dcfdf176a60d50ecf27048fad.svg",
+    "index.html": "/reci-v/index.html",
+    "static/media/list.svg": "/reci-v/static/media/list.97a60d7876d8a76608df8f2a3f8b585b.svg",
+    "main.7d31e519.css.map": "/reci-v/static/css/main.7d31e519.css.map",
+    "main.44fb889f.js.map": "/reci-v/static/js/main.44fb889f.js.map",
+    "787.89bc7d53.chunk.js.map": "/reci-v/static/js/787.89bc7d53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d31e519.css",
+    "static/js/main.44fb889f.js"
+  ]
+}
