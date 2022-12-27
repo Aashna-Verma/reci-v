@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+:root {
+    --white: #FFF;
+    --lightBrown: #BF7E68;
+    --medBrown: #914D41;
+    --lightGreen: #c8e2cd;
+    --medGreen: #91C190;
+  
+  }
+  
+  * {
+    margin: 0;
+    font-family: 'Titan One', cursive;
+    font-weight: lighter;
+    text-align: center;
+  }
