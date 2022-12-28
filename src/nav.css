@@ -1,40 +1,40 @@
 @import "root.css";
 
-form {
-  all: unset;
-  position: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 175px);
-  display: grid;
-  grid-template: repeat(6, 1fr) / 1fr ;
-  width: 90px;
-  position: absolute;
-  bottom: 0px;
+#navigationForm {
+   all: unset;
+   position: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(100vh - 175px);
+   display: grid;
+   grid-template: repeat(6, 1fr) / 1fr;
+   width: 90px;
+   position: absolute;
+   bottom: 0px;
 }
 
-input {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  left: 22px;
-  opacity: 0%;
+#navigationForm input {
+   width: 50px;
+   height: 50px;
+   position: fixed;
+   left: 22px;
+   opacity: 0%;
 }
 
 .bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .bar div {
-  width: 4px;
-  height: 30px;
-  border-radius: 4px;
-  background-color: var(--medBrown);
-  margin-right: 2px;
+   width: 4px;
+   height: 30px;
+   border-radius: 4px;
+   background-color: var(--medBrown);
+   margin-right: 2px;
 }
 
-input:checked + div{
-  filter: invert(0.4) sepia(1.9) saturate(1.1) hue-rotate(85deg);
+#navigationForm input:checked + div {
+   filter: invert(0.4) sepia(1.9) saturate(1.1) hue-rotate(85deg);
 }

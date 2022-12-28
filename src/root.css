@@ -15,3 +15,24 @@
     font-weight: lighter;
     text-align: center;
   }
+
+  ::-webkit-scrollbar {
+    width: 20px; 
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border: 6px solid var(--lightGreen);
+    border-radius: 10px;
+    background: var(--medGreen);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--medGreen);
+  }
