@@ -1,4 +1,4 @@
-@import "root.css";
+@import "../root.css";
 
 #navigationForm {
    all: unset;
@@ -13,21 +13,7 @@
    bottom: 0px;
 }
 
-#navigationForm input {
-   width: 50px;
-   height: 50px;
-   position: fixed;
-   left: 22px;
-   opacity: 0%;
-}
-
-.bar {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.bar div {
+.bar li {
    width: 4px;
    height: 30px;
    border-radius: 4px;
@@ -35,6 +21,6 @@
    margin-right: 2px;
 }
 
-#navigationForm input:checked + div {
+li:active{
    filter: invert(0.4) sepia(1.9) saturate(1.1) hue-rotate(85deg);
 }

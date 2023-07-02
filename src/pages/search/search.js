@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./search.css";
 import axios from "axios";
 import {v4 as uuidv4} from "uuid";
-import Recipe from "./recipe";
+import Recipe from "../../recipe";
 
 const Search = () => {
    const [query, setQuery] = useState("");
    const [recipes, setRecipes] = useState([]);
 
-   const APP_ID = process.env.REACT_APP_APP_ID;
-   const API_KEY = process.env.REACT_APP_API_KEY;
+   const APP_ID = process.env.REACT_APP_EDAMAM_APP_ID;
+   const API_KEY = process.env.REACT_APP_EDAMAM_API_KEY;
 
    const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&health=vegan&health=vegetarian`;
 
@@ -31,7 +31,6 @@ const Search = () => {
 
    return (
       <div>
-         <h2>Search for Recipes</h2>
          <form id="recipeSearch" onSubmit={onSubmit}>
             <input
                type="text"
