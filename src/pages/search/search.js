@@ -39,7 +39,7 @@ const Search = () => {
                onChange={onChange}
                value={query}
             />
-            <input type="submit" value="search" />
+            <input className="colored-btn" type="submit" value="search" alt="search button"/>
          </form>
          <div id="recipes">
             {recipes !== [] && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe}/>)}

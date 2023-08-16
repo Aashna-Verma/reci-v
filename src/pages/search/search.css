@@ -30,7 +30,7 @@ input[type='text']::placeholder {
    color: var(--lightGreen);
 }
 
-input[type='submit'] {
+.colored-btn {
    all: unset;
    position: absolute;
    background-color: var(--lightBrown);
@@ -50,7 +50,7 @@ input[type='submit'] {
    margin: 10px 0px 10px 20px;
    height: calc(100% - 105px);
    grid-template: auto / repeat(4, 1fr);
-   padding-right: 5px;;
+   padding-right: 5px;
    overflow: scroll;
    overflow-x: hidden;
 }
