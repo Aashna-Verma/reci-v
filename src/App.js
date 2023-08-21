@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./nav/nav";
 import Search from "./pages/search/search";
 import Login from "./pages/account/login";
+import Saved from "./pages/saved/saved";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 // assets //
@@ -30,6 +31,7 @@ const App = () => {
                   <Routes>
                      <Route exact path="/reci-v" element={<Navigate to="./search" />} />
                      <Route path="reci-v/search" element={<Search />} />
+                     <Route path="reci-v/saved" element={<Saved />} />
                      <Route path="reci-v/my-account" element={<Login />} />
                   </Routes>
             </div>

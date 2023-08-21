@@ -41,7 +41,7 @@ input[type='text']::placeholder {
    color: var(--lightGreen);
 }
 
-#recipes {
+.recipes {
    position: absolute;
    bottom: 0;
    display: grid;
@@ -53,5 +53,12 @@ input[type='text']::placeholder {
    padding-right: 5px;
    overflow: scroll;
    overflow-x: hidden;
+}
+
+.saved-recipes {
+   top: 100px;
+   bottom: unset;
+   height: auto;
+   padding-bottom: 5px;
 }
 
