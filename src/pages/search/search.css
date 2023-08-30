@@ -43,7 +43,7 @@ input[type='text']::placeholder {
 
 .recipes {
    position: absolute;
-   bottom: 0;
+   top: 85px;
    display: grid;
    gap: 15px;
    width: 97.8%;
@@ -55,10 +55,4 @@ input[type='text']::placeholder {
    overflow-x: hidden;
 }
 
-.saved-recipes {
-   top: 100px;
-   bottom: unset;
-   height: auto;
-   padding-bottom: 5px;
-}
 

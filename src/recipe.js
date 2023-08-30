@@ -11,7 +11,6 @@ const Recipe = ({ recipe }) => {
 
    const saveRecipe = () => {
       if (user) {
-
          console.log("adding recipe");
          const reff = ref(db, 'user/' + user.uid + "/recipes");
          push(reff, {

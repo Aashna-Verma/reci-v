@@ -22,7 +22,8 @@ const Saved = () => {
    return (
       <div>
          <h2>Saved</h2>
-         <div className="recipes saved-recipes">
+         <div className="recipes saved-recipes"
+         style={{'height':` ${Object.keys(recipes).length <= 8 ? 'auto' : 'calc(100% - 105px)'}`}}>
             {Object.keys(recipes).map(recipe => <SavedRecipe key={uuidv4()} recipe={recipes[recipe]} />)}
          </div>
       </div>
