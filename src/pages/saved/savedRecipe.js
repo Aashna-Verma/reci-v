@@ -1,4 +1,6 @@
 
+import deleteIcon from "../../assets/modIcons/delete.svg";
+import addIcon from "../../assets/modIcons/add.svg";
 import { ref, remove } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 import { db, auth} from "../../firebase";
@@ -17,6 +19,10 @@ const SavedRecipe = ({ rid, recipe }) => {
          navigate("/reci-v/saved"); 
    };
 
+   const addIngredients = () => {
+      console.log("nothing yet!");
+   }
+
    return (
       <div className="recipe">
          <a href={recipe["url"]} target="_blank" rel="noopener noreferrer">
@@ -25,7 +31,10 @@ const SavedRecipe = ({ rid, recipe }) => {
             </div>
             <div className="saved-image"></div>
          </a>
-         <button className="tooltip" data-tooltip="delete" data-text="-" onClick={deleteRecipe}>-</button>
+         <div className="mod-icons">
+            <img src={addIcon} className="tooltip" data-tooltip="add" onClick={addIngredients} />
+            <img src={deleteIcon} className="tooltip" data-tooltip="delete" onClick={deleteRecipe} />
+         </div>
       </div>
    );
 };

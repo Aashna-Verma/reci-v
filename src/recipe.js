@@ -1,4 +1,6 @@
 import "./recipe.css";
+import saveIcon from "./assets/modIcons/save.svg";
+import addIcon from "./assets/modIcons/add.svg";
 import { useNavigate } from "react-router-dom";
 import { ref, push } from "firebase/database";
 import { db, auth } from "./firebase";
@@ -26,6 +28,10 @@ const Recipe = ({ recipe }) => {
       }
    };
 
+   const addIngredients = () => {
+      console.log("nothing yet!");
+   }
+
    return (
       <div className="recipe">
          <a href={url} target="_blank" rel="noopener noreferrer">
@@ -34,7 +40,10 @@ const Recipe = ({ recipe }) => {
             </div>
             <img src={image} alt={label} />
          </a>
-         <button className="tooltip" data-tooltip="add" data-text="+" onClick={saveRecipe}>+</button>
+         <div className="mod-icons">
+            <img src={addIcon} className="tooltip" data-tooltip="add" onClick={addIngredients} />
+            <img src={saveIcon} className="tooltip" data-tooltip="save" onClick={saveRecipe}/>
+         </div>
       </div>
    );
 };

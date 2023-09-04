@@ -23,36 +23,37 @@
    position: absolute;
    right: 0px;
    bottom: 0px;
-   
+
 }
 
 .black-gradient {
    position: absolute;
    width: 100%;
    height: 100%;
-   background-image: linear-gradient(to bottom, #00000000,#00000027,#0000006f, #0000009e, #000000d8);
+   background-image: linear-gradient(to bottom, #00000000 10%, #00000027, #0000006f, #0000009e, #000000ed);
    border-radius: 20px;
 }
 
 .recipe button {
-   cursor:pointer;
-   position: absolute;
-   right: 10px;
-   top: 0px;
-   border: unset;
-   background-color: transparent;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-weight: bold;
-   font-size: 2.5em;
-   color: var(--white);
-   text-shadow: 0 0 10px #2957346b;
-   z-index: 0;
+   all: unset;
 }
 
-.recipe button:before {
-   content: attr(data-text);
-   -webkit-text-stroke: 2px var(--medBrown);
+.mod-icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: absolute;
-   left: 6px;
-   z-index: -1
- }
+   gap: 10px;
+   top: 10px;
+   right: 10px;
+}
+
+.mod-icons img {
+   border-radius: unset;
+   cursor:pointer;
+   filter: drop-shadow(0px 0px 5px #2c58378f);
+}
+
+.mod-icons img:hover {
+   filter: drop-shadow(0px 0px 10px #13a337a2);
+}
