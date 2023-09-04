@@ -43,6 +43,7 @@
   }
 
   .tooltip:after{
+    font-size: 10px;
     content: attr(data-tooltip);
     background-color: var(--neutralGrey);
     color: var(--white);
@@ -58,7 +59,7 @@
   }
   
   .tooltip:hover:after {
-    font-size: 0.7em;
+    font-size: 10px;
     opacity: 1;
     transition: opacity 250ms ease-in 1s;
   }  

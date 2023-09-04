@@ -23,8 +23,8 @@ const Saved = () => {
       <div>
          <h2>Saved</h2>
          <div className="recipes saved-recipes"
-         style={{'height':` ${Object.keys(recipes).length <= 8 ? 'auto' : 'calc(100% - 105px)'}`}}>
-            {Object.keys(recipes).map(recipe => <SavedRecipe key={uuidv4()} recipe={recipes[recipe]} />)}
+         style={{'height':` ${Object.keys(recipes).length <= 8 ? '50%' : 'calc(100% - 105px)'}`}}>
+            {Object.keys(recipes).map(recipe => <SavedRecipe key={uuidv4()} rid = {recipe} recipe={recipes[recipe]} />)}
          </div>
       </div>
    );
